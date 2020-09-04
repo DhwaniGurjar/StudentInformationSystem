@@ -1,0 +1,164 @@
+﻿@model SIS_DataModelLayer.StudentModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EditStudent</title>
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+    
+        <fieldset>
+            <legend>StudentModel</legend>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.FirstName)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.FirstName)
+                @Html.ValidationMessageFor(model => model.FirstName)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.LastName)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.LastName)
+                @Html.ValidationMessageFor(model => model.LastName)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Gender)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Gender)
+                @Html.ValidationMessageFor(model => model.Gender)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.EnrollNo)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.EnrollNo)
+                @Html.ValidationMessageFor(model => model.EnrollNo)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Address)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Address)
+                @Html.ValidationMessageFor(model => model.Address)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.ContactNo)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.ContactNo)
+                @Html.ValidationMessageFor(model => model.ContactNo)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.EmailID)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.EmailID)
+                @Html.ValidationMessageFor(model => model.EmailID)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.DOB)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.DOB)
+                @Html.ValidationMessageFor(model => model.DOB)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.State)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.State)
+                @Html.ValidationMessageFor(model => model.State)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.City)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.City)
+                @Html.ValidationMessageFor(model => model.City)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.DegreeYear)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.DegreeYear)
+                @Html.ValidationMessageFor(model => model.DegreeYear)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.StudentID)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.StudentID)
+                @Html.ValidationMessageFor(model => model.StudentID)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.CollegeCode)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.CollegeCode)
+                @Html.ValidationMessageFor(model => model.CollegeCode)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.DepartmentCode)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.DepartmentCode)
+                @Html.ValidationMessageFor(model => model.DepartmentCode)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Semester)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Semester)
+                @Html.ValidationMessageFor(model => model.Semester)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.LogDate)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.LogDate)
+                @Html.ValidationMessageFor(model => model.LogDate)
+            </div>
+    
+            <p>
+                <input type="submit" value="Save" />
+            </p>
+        </fieldset>
+    }
+    
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</body>
+</html>

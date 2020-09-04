@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StudentInformationSystemModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="StudentInformationSystemModelStoreContainer">
+    <EntitySet Name="tblCity" EntityType="StudentInformationSystemModel.Store.tblCity" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblCollege" EntityType="StudentInformationSystemModel.Store.tblCollege" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblCollegeDepartment" EntityType="StudentInformationSystemModel.Store.tblCollegeDepartment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblDepartment" EntityType="StudentInformationSystemModel.Store.tblDepartment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblRoles" EntityType="StudentInformationSystemModel.Store.tblRoles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblSemester" EntityType="StudentInformationSystemModel.Store.tblSemester" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblState" EntityType="StudentInformationSystemModel.Store.tblState" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblStudent" EntityType="StudentInformationSystemModel.Store.tblStudent" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblStudentHistory" EntityType="StudentInformationSystemModel.Store.tblStudentHistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblSubject" EntityType="StudentInformationSystemModel.Store.tblSubject" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblSubjectDepartment" EntityType="StudentInformationSystemModel.Store.tblSubjectDepartment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblUniversity" EntityType="StudentInformationSystemModel.Store.tblUniversity" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblUserInfo" EntityType="StudentInformationSystemModel.Store.tblUserInfo" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__tblCity__StateID__656C112C" Association="StudentInformationSystemModel.Store.FK__tblCity__StateID__656C112C">
+      <End Role="tblState" EntitySet="tblState" />
+      <End Role="tblCity" EntitySet="tblCity" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblColleg__CityI__70DDC3D8" Association="StudentInformationSystemModel.Store.FK__tblColleg__CityI__70DDC3D8">
+      <End Role="tblCity" EntitySet="tblCity" />
+      <End Role="tblCollege" EntitySet="tblCollege" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblColleg__State__6FE99F9F" Association="StudentInformationSystemModel.Store.FK__tblColleg__State__6FE99F9F">
+      <End Role="tblState" EntitySet="tblState" />
+      <End Role="tblCollege" EntitySet="tblCollege" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblColleg__Unive__71D1E811" Association="StudentInformationSystemModel.Store.FK__tblColleg__Unive__71D1E811">
+      <End Role="tblUniversity" EntitySet="tblUniversity" />
+      <End Role="tblCollege" EntitySet="tblCollege" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblStuden__Stude__339FAB6E" Association="StudentInformationSystemModel.Store.FK__tblStuden__Stude__339FAB6E">
+      <End Role="tblStudent" EntitySet="tblStudent" />
+      <End Role="tblStudentHistory" EntitySet="tblStudentHistory" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tblCity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CityName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="StateID" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6035: The relationship 'FK__tblColleg__Colle__7A672E12' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'FK__tblStuden__Colle__3493CFA7' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      -->
+  <EntityType Name="tblCollege">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CollegeName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CollegeCode" Type="int" Nullable="false" />
+    <Property Name="StateID" Type="uniqueidentifier" />
+    <Property Name="CityID" Type="uniqueidentifier" />
+    <Property Name="ContactNo" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="UniversityID" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="tblCollegeDepartment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CollegeCode" Type="int" />
+    <Property Name="DepartmentCode" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6035: The relationship 'FK__tblColleg__Depar__7B5B524B' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'FK__tblStuden__Depar__3587F3E0' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'FK__tblSubjec__Depar__2FCF1A8A' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      -->
+  <EntityType Name="tblDepartment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DepartmentCode" Type="int" Nullable="false" />
+    <Property Name="DepartmentName" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6035: The relationship 'FK__tblUserIn__RoleI__5CD6CB2B' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      -->
+  <EntityType Name="tblRoles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+    <Property Name="RoleName" Type="varchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6035: The relationship 'FK__tblStuden__Semes__367C1819' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'FK__tblSubjec__Semes__2EDAF651' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      -->
+  <EntityType Name="tblSemester">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SemesterNo" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblState">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="StateName" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblStudent">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="LastName" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Gender" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="EnrollNo" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Address" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="ContactNo" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="EmailID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DOB" Type="date" Nullable="false" />
+    <Property Name="State" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="City" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DegreeYear" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblStudentHistory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="StudentID" Type="uniqueidentifier" />
+    <Property Name="CollegeCode" Type="int" />
+    <Property Name="DepartmentCode" Type="int" />
+    <Property Name="Semester" Type="int" />
+    <Property Name="LogDate" Type="date" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6035: The relationship 'FK__tblSubjec__Subje__2DE6D218' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      -->
+  <EntityType Name="tblSubject">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SubjectCode" Type="int" Nullable="false" />
+    <Property Name="SubjectName" Type="varchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="tblSubjectDepartment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SubjectCode" Type="int" />
+    <Property Name="SemesterID" Type="int" />
+    <Property Name="DepartmentCode" Type="int" />
+  </EntityType>
+  <EntityType Name="tblUniversity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UniversityName" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblUserInfo">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmailID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="RoleID" Type="int" />
+  </EntityType>
+  <Association Name="FK__tblCity__StateID__656C112C">
+    <End Role="tblState" Type="StudentInformationSystemModel.Store.tblState" Multiplicity="0..1" />
+    <End Role="tblCity" Type="StudentInformationSystemModel.Store.tblCity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblState">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblCity">
+        <PropertyRef Name="StateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblColleg__CityI__70DDC3D8">
+    <End Role="tblCity" Type="StudentInformationSystemModel.Store.tblCity" Multiplicity="0..1" />
+    <End Role="tblCollege" Type="StudentInformationSystemModel.Store.tblCollege" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblCollege">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblColleg__State__6FE99F9F">
+    <End Role="tblState" Type="StudentInformationSystemModel.Store.tblState" Multiplicity="0..1" />
+    <End Role="tblCollege" Type="StudentInformationSystemModel.Store.tblCollege" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblState">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblCollege">
+        <PropertyRef Name="StateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblColleg__Unive__71D1E811">
+    <End Role="tblUniversity" Type="StudentInformationSystemModel.Store.tblUniversity" Multiplicity="0..1" />
+    <End Role="tblCollege" Type="StudentInformationSystemModel.Store.tblCollege" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUniversity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblCollege">
+        <PropertyRef Name="UniversityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblStuden__Stude__339FAB6E">
+    <End Role="tblStudent" Type="StudentInformationSystemModel.Store.tblStudent" Multiplicity="0..1" />
+    <End Role="tblStudentHistory" Type="StudentInformationSystemModel.Store.tblStudentHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStudent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentHistory">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

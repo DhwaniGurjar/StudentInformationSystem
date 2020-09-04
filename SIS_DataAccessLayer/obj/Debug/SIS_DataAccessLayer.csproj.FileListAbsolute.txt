@@ -1,0 +1,21 @@
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\SIS_DataAccessLayer\obj\Debug\SIS_DataAccessLayer.csprojResolveAssemblyReference.cache
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\SIS_DataAccessLayer\bin\Debug\SIS_DataAccessLayer.dll.config
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\SIS_DataAccessLayer\bin\Debug\SIS_DataAccessLayer.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\SIS_DataAccessLayer\bin\Debug\SIS_DataAccessLayer.pdb
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\SIS_DataAccessLayer\bin\Debug\EntityFramework.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\SIS_DataAccessLayer\bin\Debug\SIS_DataModelLayer.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\SIS_DataAccessLayer\bin\Debug\SIS_DataModelLayer.pdb
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\SIS_DataAccessLayer\bin\Debug\EntityFramework.xml
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\SIS_DataAccessLayer\obj\Debug\SIS_DataAccessLayer.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\SIS_DataAccessLayer\obj\Debug\SIS_DataAccessLayer.pdb
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataAccessLayer\obj\Debug\SIS_DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataAccessLayer\obj\Debug\SIS_DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataAccessLayer\obj\Debug\SIS_DataAccessLayer.dll
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataAccessLayer\obj\Debug\SIS_DataAccessLayer.pdb
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataAccessLayer\bin\Debug\SIS_DataAccessLayer.dll.config
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataAccessLayer\bin\Debug\SIS_DataAccessLayer.dll
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataAccessLayer\bin\Debug\SIS_DataAccessLayer.pdb
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataAccessLayer\bin\Debug\SIS_DataModelLayer.dll
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataAccessLayer\bin\Debug\SIS_DataModelLayer.pdb
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataAccessLayer\bin\Debug\EntityFramework.xml

@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StudentInformationSystemModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="StudentInformationSystemEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="tblCity" EntityType="StudentInformationSystemModel.tblCity" />
+    <EntitySet Name="tblCollege" EntityType="StudentInformationSystemModel.tblCollege" />
+    <EntitySet Name="tblCollegeDepartment" EntityType="StudentInformationSystemModel.tblCollegeDepartment" />
+    <EntitySet Name="tblDepartment" EntityType="StudentInformationSystemModel.tblDepartment" />
+    <EntitySet Name="tblRoles" EntityType="StudentInformationSystemModel.tblRoles" />
+    <EntitySet Name="tblSemester" EntityType="StudentInformationSystemModel.tblSemester" />
+    <EntitySet Name="tblState" EntityType="StudentInformationSystemModel.tblState" />
+    <EntitySet Name="tblStudent" EntityType="StudentInformationSystemModel.tblStudent" />
+    <EntitySet Name="tblStudentHistory" EntityType="StudentInformationSystemModel.tblStudentHistory" />
+    <EntitySet Name="tblSubject" EntityType="StudentInformationSystemModel.tblSubject" />
+    <EntitySet Name="tblSubjectDepartment" EntityType="StudentInformationSystemModel.tblSubjectDepartment" />
+    <EntitySet Name="tblUniversity" EntityType="StudentInformationSystemModel.tblUniversity" />
+    <EntitySet Name="tblUserInfo" EntityType="StudentInformationSystemModel.tblUserInfo" />
+    <AssociationSet Name="FK__tblCity__StateID__656C112C" Association="StudentInformationSystemModel.FK__tblCity__StateID__656C112C">
+      <End Role="tblState" EntitySet="tblState" />
+      <End Role="tblCity" EntitySet="tblCity" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblColleg__CityI__70DDC3D8" Association="StudentInformationSystemModel.FK__tblColleg__CityI__70DDC3D8">
+      <End Role="tblCity" EntitySet="tblCity" />
+      <End Role="tblCollege" EntitySet="tblCollege" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblColleg__State__6FE99F9F" Association="StudentInformationSystemModel.FK__tblColleg__State__6FE99F9F">
+      <End Role="tblState" EntitySet="tblState" />
+      <End Role="tblCollege" EntitySet="tblCollege" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblColleg__Unive__71D1E811" Association="StudentInformationSystemModel.FK__tblColleg__Unive__71D1E811">
+      <End Role="tblUniversity" EntitySet="tblUniversity" />
+      <End Role="tblCollege" EntitySet="tblCollege" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblStuden__Stude__339FAB6E" Association="StudentInformationSystemModel.FK__tblStuden__Stude__339FAB6E">
+      <End Role="tblStudent" EntitySet="tblStudent" />
+      <End Role="tblStudentHistory" EntitySet="tblStudentHistory" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tblCity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="CityName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="StateID" Type="Guid" />
+    <NavigationProperty Name="tblState" Relationship="StudentInformationSystemModel.FK__tblCity__StateID__656C112C" FromRole="tblCity" ToRole="tblState" />
+    <NavigationProperty Name="tblCollege" Relationship="StudentInformationSystemModel.FK__tblColleg__CityI__70DDC3D8" FromRole="tblCity" ToRole="tblCollege" />
+  </EntityType>
+  <EntityType Name="tblCollege">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="CollegeName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CollegeCode" Type="Int32" Nullable="false" />
+    <Property Name="StateID" Type="Guid" />
+    <Property Name="CityID" Type="Guid" />
+    <Property Name="ContactNo" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="UniversityID" Type="Guid" />
+    <NavigationProperty Name="tblCity" Relationship="StudentInformationSystemModel.FK__tblColleg__CityI__70DDC3D8" FromRole="tblCollege" ToRole="tblCity" />
+    <NavigationProperty Name="tblState" Relationship="StudentInformationSystemModel.FK__tblColleg__State__6FE99F9F" FromRole="tblCollege" ToRole="tblState" />
+    <NavigationProperty Name="tblUniversity" Relationship="StudentInformationSystemModel.FK__tblColleg__Unive__71D1E811" FromRole="tblCollege" ToRole="tblUniversity" />
+  </EntityType>
+  <EntityType Name="tblCollegeDepartment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="CollegeCode" Type="Int32" />
+    <Property Name="DepartmentCode" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblDepartment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="DepartmentCode" Type="Int32" Nullable="false" />
+    <Property Name="DepartmentName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblRoles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="RoleID" Type="Int32" Nullable="false" />
+    <Property Name="RoleName" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblSemester">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="SemesterNo" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblState">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="StateName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tblCity" Relationship="StudentInformationSystemModel.FK__tblCity__StateID__656C112C" FromRole="tblState" ToRole="tblCity" />
+    <NavigationProperty Name="tblCollege" Relationship="StudentInformationSystemModel.FK__tblColleg__State__6FE99F9F" FromRole="tblState" ToRole="tblCollege" />
+  </EntityType>
+  <EntityType Name="tblStudent">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Gender" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="EnrollNo" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ContactNo" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="EmailID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DOB" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="State" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DegreeYear" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblStudentHistory" Relationship="StudentInformationSystemModel.FK__tblStuden__Stude__339FAB6E" FromRole="tblStudent" ToRole="tblStudentHistory" />
+  </EntityType>
+  <EntityType Name="tblStudentHistory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="StudentID" Type="Guid" />
+    <Property Name="CollegeCode" Type="Int32" />
+    <Property Name="DepartmentCode" Type="Int32" />
+    <Property Name="Semester" Type="Int32" />
+    <Property Name="LogDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblStudent" Relationship="StudentInformationSystemModel.FK__tblStuden__Stude__339FAB6E" FromRole="tblStudentHistory" ToRole="tblStudent" />
+  </EntityType>
+  <EntityType Name="tblSubject">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="SubjectCode" Type="Int32" Nullable="false" />
+    <Property Name="SubjectName" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblSubjectDepartment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="SubjectCode" Type="Int32" />
+    <Property Name="SemesterID" Type="Int32" />
+    <Property Name="DepartmentCode" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblUniversity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="UniversityName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tblCollege" Relationship="StudentInformationSystemModel.FK__tblColleg__Unive__71D1E811" FromRole="tblUniversity" ToRole="tblCollege" />
+  </EntityType>
+  <EntityType Name="tblUserInfo">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Guid" Nullable="false" />
+    <Property Name="EmailID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="RoleID" Type="Int32" />
+  </EntityType>
+  <Association Name="FK__tblCity__StateID__656C112C">
+    <End Role="tblState" Type="StudentInformationSystemModel.tblState" Multiplicity="0..1" />
+    <End Role="tblCity" Type="StudentInformationSystemModel.tblCity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblState">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblCity">
+        <PropertyRef Name="StateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblColleg__CityI__70DDC3D8">
+    <End Role="tblCity" Type="StudentInformationSystemModel.tblCity" Multiplicity="0..1" />
+    <End Role="tblCollege" Type="StudentInformationSystemModel.tblCollege" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblCollege">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblColleg__State__6FE99F9F">
+    <End Role="tblState" Type="StudentInformationSystemModel.tblState" Multiplicity="0..1" />
+    <End Role="tblCollege" Type="StudentInformationSystemModel.tblCollege" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblState">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblCollege">
+        <PropertyRef Name="StateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblColleg__Unive__71D1E811">
+    <End Role="tblUniversity" Type="StudentInformationSystemModel.tblUniversity" Multiplicity="0..1" />
+    <End Role="tblCollege" Type="StudentInformationSystemModel.tblCollege" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUniversity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblCollege">
+        <PropertyRef Name="UniversityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblStuden__Stude__339FAB6E">
+    <End Role="tblStudent" Type="StudentInformationSystemModel.tblStudent" Multiplicity="0..1" />
+    <End Role="tblStudentHistory" Type="StudentInformationSystemModel.tblStudentHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStudent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentHistory">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

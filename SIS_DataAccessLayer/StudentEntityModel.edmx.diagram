@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fa481ec4defb4665973d4adf2e010742" Name="Diagram1">
+        <EntityTypeShape EntityType="StudentInformationSystemModel.tblCity" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentInformationSystemModel.tblCollege" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentInformationSystemModel.tblCollegeDepartment" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentInformationSystemModel.tblDepartment" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentInformationSystemModel.tblRoles" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentInformationSystemModel.tblSemester" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentInformationSystemModel.tblState" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentInformationSystemModel.tblStudent" Width="1.5" PointX="5.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentInformationSystemModel.tblStudentHistory" Width="1.5" PointX="8" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentInformationSystemModel.tblSubject" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentInformationSystemModel.tblSubjectDepartment" Width="1.5" PointX="4.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentInformationSystemModel.tblUniversity" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentInformationSystemModel.tblUserInfo" Width="1.5" PointX="9.75" PointY="8.75" IsExpanded="true" />
+        <AssociationConnector Association="StudentInformationSystemModel.FK__tblCity__StateID__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="StudentInformationSystemModel.FK__tblColleg__CityI__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="StudentInformationSystemModel.FK__tblColleg__State__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="StudentInformationSystemModel.FK__tblColleg__Unive__71D1E811" ManuallyRouted="false" />
+        <AssociationConnector Association="StudentInformationSystemModel.FK__tblStuden__Stude__339FAB6E" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

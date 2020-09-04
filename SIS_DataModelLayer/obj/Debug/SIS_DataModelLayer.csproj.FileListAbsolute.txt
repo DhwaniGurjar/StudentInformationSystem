@@ -1,0 +1,10 @@
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\SIS_DataModelLayer\bin\Debug\SIS_DataModelLayer.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\SIS_DataModelLayer\bin\Debug\SIS_DataModelLayer.pdb
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\SIS_DataModelLayer\obj\Debug\SIS_DataModelLayer.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\SIS_DataModelLayer\obj\Debug\SIS_DataModelLayer.pdb
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataModelLayer\bin\Debug\SIS_DataModelLayer.dll
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataModelLayer\bin\Debug\SIS_DataModelLayer.pdb
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataModelLayer\obj\Debug\SIS_DataModelLayer.csprojResolveAssemblyReference.cache
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataModelLayer\obj\Debug\SIS_DataModelLayer.csproj.CoreCompileInputs.cache
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataModelLayer\obj\Debug\SIS_DataModelLayer.dll
+C:\SISv3\SISv3\StudentInformationSystem\SIS_DataModelLayer\obj\Debug\SIS_DataModelLayer.pdb

@@ -1,0 +1,75 @@
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\StudentInformationSystem.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\StudentInformationSystem.pdb
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\Antlr3.Runtime.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\EntityFramework.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\Microsoft.Web.Infrastructure.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\Newtonsoft.Json.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\SIS_BusinessLogicLayer.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\SIS_DataAccessLayer.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\SIS_DataModelLayer.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Net.Http.Formatting.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Http.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Http.WebHost.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Mvc.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Optimization.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Providers.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Razor.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.WebPages.Deployment.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.WebPages.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.WebPages.Razor.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\WebGrease.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\SIS_BusinessLogicLayer.pdb
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\SIS_DataAccessLayer.pdb
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\SIS_DataModelLayer.pdb
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\EntityFramework.xml
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\Newtonsoft.Json.xml
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Net.Http.Formatting.xml
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Http.xml
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Http.WebHost.xml
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Mvc.xml
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Razor.xml
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.WebPages.xml
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.WebPages.Deployment.xml
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.WebPages.Razor.xml
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.csprojResolveAssemblyReference.cache
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.dll
+E:\Student Information System\SVN\projectcode\SISv3\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.pdb
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\StudentInformationSystem.dll.config
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\StudentInformationSystem.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\StudentInformationSystem.pdb
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\Antlr3.Runtime.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\EntityFramework.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\Newtonsoft.Json.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\SIS_BusinessLogicLayer.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\SIS_DataAccessLayer.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\SIS_DataModelLayer.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Net.Http.Formatting.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Http.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Http.WebHost.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Mvc.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Optimization.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Providers.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Razor.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.WebPages.Deployment.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.WebPages.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.WebPages.Razor.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\WebGrease.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\SIS_BusinessLogicLayer.pdb
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\SIS_DataAccessLayer.pdb
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\SIS_DataAccessLayer.dll.config
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\SIS_DataModelLayer.pdb
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\EntityFramework.xml
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\Newtonsoft.Json.xml
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Net.Http.Formatting.xml
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Http.xml
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Http.WebHost.xml
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Mvc.xml
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.Razor.xml
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.WebPages.xml
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.WebPages.Deployment.xml
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\bin\System.Web.WebPages.Razor.xml
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.csprojResolveAssemblyReference.cache
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.csproj.CoreCompileInputs.cache
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.dll
+C:\SISv3\SISv3\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.pdb
